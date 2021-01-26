@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import db from '../db.json';
-import Widget from '../src/components/Widget';
+import Widget, { Content, Header } from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
@@ -30,19 +30,19 @@ const Home: React.FC = () => {
       <QuizContainer>
         <QuizLogo className={'svg'} />
         <Widget>
-          <Widget.Header>
+          <Header>
             <h1>{db.title}</h1>
-          </Widget.Header>
-          <Widget.Content>
+          </Header>
+          <Content>
             <p>{db.description}</p>
-          </Widget.Content>
+          </Content>
         </Widget>
 
         <Widget>
-          <Widget.Content>
+          <Content>
             <h1>{db.title}</h1>
             <p>{db.description}</p>
-          </Widget.Content>
+          </Content>
         </Widget>
         <Footer />
       </QuizContainer>

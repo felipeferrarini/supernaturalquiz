@@ -1,13 +1,7 @@
-import styled, { StyledComponentBase } from 'styled-components';
+import styled from 'styled-components';
 import { ThemeProps } from '../../../pages/_app';
 
-interface WidgetProps
-  extends StyledComponentBase<any, Record<string, unknown>> {
-  Content?: typeof Content;
-  Header?: typeof Header;
-}
-
-const Widget: WidgetProps = styled.div`
+const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }: ThemeProps) => theme.colors.secondary};
@@ -31,7 +25,7 @@ const Widget: WidgetProps = styled.div`
   }
 `;
 
-const Content = styled.div`
+export const Content = styled.div`
   padding: 24px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
@@ -45,7 +39,7 @@ const Content = styled.div`
   }
 `;
 
-const Header = styled.header`
+export const Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -53,6 +47,4 @@ const Header = styled.header`
   background-color: ${({ theme }: ThemeProps) => theme.colors.secondary};
 `;
 
-Widget.Content = Content;
-Widget.Header = Header;
 export default Widget;
