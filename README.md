@@ -11,7 +11,7 @@ No diretorio do projeto, você pode rodar os seguintes comandos:
 
 Instala todas as dependências utilizadas no projeto.
 
-#### `yarn start`
+#### `yarn dev`
 
 Roda o App no modo de desenvolvimento.\
 Abra [http://localhost:3000](http://localhost:3000) para ver no browser.
