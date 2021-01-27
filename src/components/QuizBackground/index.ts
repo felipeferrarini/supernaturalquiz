@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ThemeProps } from '../../../pages/_app';
+import { ThemeProps } from '../../pages/_app';
 
 interface Props {
   backgroundImage: string;
