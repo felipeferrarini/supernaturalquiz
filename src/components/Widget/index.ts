@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ThemeProps } from '../../pages/_app';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Widget: any = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
@@ -25,7 +26,7 @@ const Widget: any = styled.div`
   }
 `;
 export const Content = styled.div`
-  padding: 24px 32px 32px 32px;
+  padding: 24px 32px 0px 32px;
   & > *:first-child {
     margin-top: 0;
   }
@@ -50,61 +51,73 @@ export const Header = styled.header`
 
 Widget.Header = Header;
 
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-
-  input {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #afafaf;
-    background-color: transparent;
-    height: 45px;
-    margin: 10px 0;
-    color: #fff;
+export const Topic = styled.div`
+  label {
     outline: 0;
-    font-size: 16px;
-    padding-left: 10px;
-    transition: all 0.2s;
+    text-decoration: none;
+    color: ${({ theme }: ThemeProps) => theme.colors.contrastText};
+    background-color: ${({ theme }: ThemeProps) => `${theme.colors.primary}40`};
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: ${({ theme }: ThemeProps) => theme.borderRadius};
+    transition: 0.3s;
+    display: block;
+    position: relative;
 
-    :focus {
-      border: 1px solid ${({ theme }: ThemeProps) => theme.colors.primary};
+    &:hover,
+    &:focus {
+      opacity: 0.5;
     }
   }
 
-  button {
-    width: 100%;
-    height: 40px;
-    margin: 10px 0;
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    transition: all 0.2s;
-    background-color: ${({ theme }: ThemeProps) => theme.colors.verde};
-    outline: 0;
+  input {
+    display: none;
+  }
 
-    :hover {
-      background-color: ${({ theme }: ThemeProps) => theme.colors.verdeClaro};
-    }
-
-    :disabled {
-      cursor: not-allowed;
-      background-color: #afafaf;
-      color: #0008;
-    }
-
-    :active {
-      background-color: ${({ theme }: ThemeProps) => theme.colors.primary};
-    }
+  input:checked ~ label {
+    background-color: ${({ theme }: ThemeProps) => theme.colors.secondary};
+  }
+  .certa {
+    background-color: ${({ theme }: ThemeProps) => theme.colors.verdeClaro};
+  }
+  .ignorada {
+    background-color: ${({ theme }: ThemeProps) => `${theme.colors.primary}40`};
+  }
+  .naoEscolhida {
+    opacity: 0.5;
+  }
+  .errada {
+    background-color: ${({ theme }: ThemeProps) => theme.colors.wrong};
   }
 `;
 
-Widget.Form = Form;
-
 export default Widget;
+
+export const ResultSVG = styled.div`
+
+  color: #fff;
+  font-size: 25px;
+  width:50px;
+  height:50px;
+  margin: 20px auto ;
+  border-radius:50%;
+  background-color: ${(props) => props.className === 'Acertou!' ? props.theme.colors.verdeClaro : props.className === 'Errou!' ? props.theme.colors.wrong : 'transparent'};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+
+  ::before{
+    content:'';
+    width: 60px;
+    height:60px;
+    border-radius:50%;
+    background-color: ${(props) => props.className === 'Acertou!' ? props.theme.colors.verdeClaro : props.className === 'Errou!' ? props.theme.colors.wrong : 'transparent'};
+    opacity: 0.3;
+    position: absolute;
+    transform: translateZ(-1px);
+  }
+
+`;

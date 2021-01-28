@@ -8,6 +8,8 @@ import Head from 'next/head';
 import QuizLogo from '../../src/components/QuizLogo';
 import { useRouter } from 'next/router';
 import { QuizContainer } from '../components/QuizContainer';
+import Input from '../components/Input';
+import Button from '../components/Button';
 
 const Home: React.FC = () => {
   const [name, setName] = useState('');
@@ -32,18 +34,18 @@ const Home: React.FC = () => {
           <Widget.Content>
             <p>{db.description}</p>
 
-            <Widget.Form onSubmit={handleSubmit}>
-              <input
+            <form onSubmit={handleSubmit}>
+              <Input
                 value={name}
-                onChange={e => setName(e.target.value)}
+                onChange={setName}
                 type="text"
                 placeholder="Informe seu nome caçador!"
               />
 
-              <button disabled={name.length === 0} type="submit">
+              <Button disabled={name.length === 0} type="submit">
                 JOGAR
-              </button>
-            </Widget.Form>
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
