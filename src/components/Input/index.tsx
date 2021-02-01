@@ -9,7 +9,7 @@ const InputBase = styled.input`
   border: 1px solid #afafaf;
   background-color: ${({ theme }: ThemeProps) => theme.colors.mainBg};
   height: 45px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   color: #fff;
   outline: 0;
   font-size: 14px;

@@ -11,12 +11,7 @@ export interface ThemeProps {
     colors: {
       primary: string;
       secondary: string;
-      verde: string;
-      verdeClaro: string;
-      roxo: string;
-      roxoClaro: string;
       mainBg: string;
-      mainBg2: string;
       contrastText: string;
       wrong: string;
       success: string;

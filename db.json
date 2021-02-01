@@ -1,47 +1,155 @@
 {
-  "bg": "https://wallpaperaccess.com/full/36633.png",
-  "title": "Quiz Supernatural",
-  "description": "Para você que assim como eu não perde um episódio, teste seus conhecimentos sobre os irmãos winchester!",
+  "bg": "https://wallpapercave.com/download/supernatural-season-15-wallpapers-wp8023835?nocache=1",
+  "title": "AluraQuiz - Supernatural",
+  "description": "Quiz criado como projeto inicial da Imersão React 2ª Edição: NextJs realizado pela Alura. Para você que assim como eu não perde um episódio, teste seus conhecimentos sobre os irmãos winchester!",
   "questions": [
     {
-      "image": "https://i.pinimg.com/originals/4e/76/41/4e7641d761b96dc6adfe4050545974a8.jpg",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://img.quizur.com/f/img5fbea4313760a3.77304578.jpg?lastEdited=1606329396",
+      "title": "Em que ano foi ao ar pela 1ª vez supernatural? Dia mês e ano.",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "15 de outubro de 2005",
+        "10 de setembro de 2005",
+        "9 de agosto de 2004",
+        "13 de setembro de 2005"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://cdn.mensagenscomamor.com/content/images/m000483402.jpg?v=1",
+      "title": "Qual o nome da lobisomem que Sam tem uma paixonite no episódio heart?",
+      "description": "Essa é facil haha",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Madson",
+        "Lisa",
+        "Amélia",
+        "Ruby"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6643/985c9d141d01cb7c3b98f63905d65731e2045b60_hq.gif",
+      "title": "Em que episódio Dean vai pro inferno?",
+      "description": "Ta começando a esquentar!",
+      "answer": 1,
+      "alternatives": [
+        "Exagerado",
+        "Enfrentando o Capeta",
+        "A morte na água",
+        "Canção do Cisne"
+      ]
+    },
+    {
+      "image": "https://3.bp.blogspot.com/-RzwvSg3EngU/VIHKbx6mXSI/AAAAAAAAFVU/WONLUIoB26s/s1600/tumblr_ng11772IAo1saqgydo5_400.gif",
+      "title": "Como se mata um vampiro?",
+      "description": "Vamos ver se vc seria um bom caçador",
+      "answer": 2,
+      "alternatives": [
+        "Sair no sol",
+        "Estaca de madeira no coração",
+        "Decaptação",
+        "Dente de alho"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/3d/0a/99/3d0a99a9af871db4a55c5af87a6653c7.gif",
+      "title": "Quantos anjos cairam do céu quando metatron fez o feitiço que expulsavam os anjos do céu?",
+      "description": "Mamão com açucar",
+      "answer": 1,
+      "alternatives": [
+        "Metade",
+        "Todos",
+        "Só os que não aceitaram receber as ordens de metatron",
+        "Nenhum"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6722/26f8015deb815b04ea4df0c6e37a761478d2c40d_00.gif",
+      "title": "Pra onde vão todas as criaturas mortas, exceto anjos e demônios?",
+      "description": "To pegando muito leve",
+      "answer": 3,
+      "alternatives": [
+        "Inferno",
+        "Vazio",
+        "Céu",
+        "Purgatório"
+      ]
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/proxy/n37D_m-Vj862VtEznQUq0MqFr3VRsreX4btTbUM6aTHXLniflpYmGvCn1e7UkuSeG-v-xif2dHslWU5ILwlZ-PqEG_7kcIlXIMoB6BI3xC4h5JzwGQ",
+      "title": "Em que temporada os leviatãs apareceram?",
+      "description": "Não vale colar heim",
+      "answer": 2,
+      "alternatives": [
+        "8ª Temporada",
+        "9ª Temporada",
+        "7ª Temporada"
+      ]
+    },
+    {
+      "image": "https://www.supernatural.etc.br/wp-content/uploads/2016/11/SN311__0029.jpg",
+      "title": "Em que temporada Dean morreu pela primeira vez?",
+      "description": "E lá vamos nós de novo!",
+      "answer": 1,
+      "alternatives": [
+        "6ª Temporada",
+        "3ª Temporada",
+        "4ª Temporada"
+      ]
+    },
+    {
+      "image": "https://www.animenewsnetwork.com/hotlink/images/encyc/A12032-3385575760.1401990922.jpg",
+      "title": "Para qual desenho animado, Dean, Sam e Castiel são transportados?",
+      "description": "O que que há velhinho?",
+      "answer": 1,
+      "alternatives": [
+        "Liga da Justiça",
+        "Scooby-Doo",
+        "Meninas Superpoderosas",
+        "X-Men"
+      ]
+    },
+    {
+      "image": "https://vocevaientender.files.wordpress.com/2013/10/gif-samkiel.gif",
+      "title": "Qual anjo Dean pertimitiu que possuíse Sam sem que ele soubesse?",
+      "description": "Esse foi um vacilo e tanto",
+      "answer": 2,
+      "alternatives": [
+        "Castiel",
+        "Miguel",
+        "Gadreel",
+        "Gabriel"
+      ]
+    },
+    {
+      "image": "https://d.wattpad.com/story_parts/569858588/images/15c80aac46da68c4192206378795.gif",
+      "title": "Qual a frase que Dean fala na primeira temporada que marca toda série?",
+      "description": "Esse foi um vacilo e tanto",
+      "answer": 3,
+      "alternatives": [
+        "Ajudar pessoas, caçar demônios, o negócio da família",
+        "Não falou nada",
+        "Salvar pessoas, caçar monstros, o negócio da família",
+        "salvar pessoas, caçar coisas, o negócio da família"
       ]
     }
   ],
   "external": [
-    ""
+    "https://projeto-alura-quiz.andersonfroes.vercel.app/",
+    "https://pokequiz-imersao-next.felipeferreiradev.vercel.app/",
+    "https://quiz-justiceleague.levi-magny.vercel.app/",
+    "https://covid19quiz.felipepereirapinto.vercel.app/",
+    "https://covid-quiz.pedrofelipemm.vercel.app/",
+    "https://cthulhuquiz-imersaoalura.vercel.app/"
   ],
   "theme": {
     "colors": {
       "primary": "#1c54b2",
       "secondary": "#007bb2",
-      "verde": "#00a152",
-      "verdeClaro": "#00e676",
-      "roxo": "#8357E5",
-      "roxoClaro": "#9466FF",
       "mainBg": "#030619",
-      "mainBg2": "#171B35",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "success": "#00e676"
     },
     "borderRadius": "4px"
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import db from '../../db.json';
 
 export default class MyDocument extends Document {
   render(): JSX.Element {
@@ -8,33 +9,24 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="title" content="AluraQuiz - Supernatural" />
-          <meta
-            name="description"
-            content="Quiz criado como projeto inicial da Imersão React 2ª Edição: NextJs realizado pela Alura. Para você que assim como eu não perde um episódio, teste seus conhecimentos sobre os irmãos winchester!"
-          />
+          <meta name="title" content={db.title} />
+          <meta name="description" content={db.description} />
           <meta property="og:type" content="website" />
           <meta
             property="og:url"
             content="https://supernaturalquiz.vercel.app/"
           />
-          <meta property="og:title" content="AluraQuiz - Supernatural" />
-          <meta
-            property="og:description"
-            content="Quiz criado como projeto inicial da Imersão React 2ª Edição: NextJs realizado pela Alura. Para você que assim como eu não perde um episódio, teste seus conhecimentos sobre os irmãos winchester!"
-          />
-          <meta property="og:image" content="" />
+          <meta property="og:title" content={db.title} />
+          <meta property="og:description" content={db.description} />
+          <meta property="og:image" content="/print.JPG" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta
             property="twitter:url"
             content="https://supernaturalquiz.vercel.app/"
           />
-          <meta property="twitter:title" content="AluraQuiz - Supernatural" />
-          <meta
-            property="twitter:description"
-            content="Quiz criado como projeto inicial da Imersão React 2ª Edição: NextJs realizado pela Alura. Para você que assim como eu não perde um episódio, teste seus conhecimentos sobre os irmãos winchester!"
-          />
-          <meta property="twitter:image" content="" />
+          <meta property="twitter:title" content={db.title} />
+          <meta property="twitter:description" content={db.description} />
+          <meta property="twitter:image" content="/print.JPG" />
 
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700,800,900"

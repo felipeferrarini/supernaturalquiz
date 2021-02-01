@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { motion } from 'framer-motion';
 import React from 'react';
 
 interface Props {
@@ -8,7 +8,14 @@ interface Props {
 
 const Logo: React.FC<Props> = ({ className }) => {
   return (
-    <svg
+    <motion.svg
+      variants={{
+        show: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: '-100%' }
+      }}
+      initial="hidden"
+      animate="show"
+      transition={{ delay: 0, duration: 0.5 }}
       className={className}
       width="135"
       height="67"
@@ -79,7 +86,7 @@ const Logo: React.FC<Props> = ({ className }) => {
           <rect width="134.373" height="67" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </motion.svg>
   );
 };
 

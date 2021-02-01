@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const FooterWrapper = styled.footer`
+const FooterWrapper = styled(motion.footer)`
   background-color: #00000070;
   padding: 20px;
   display: flex;
@@ -27,7 +28,15 @@ const FooterWrapper = styled.footer`
 
 const Footer: React.FC = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper
+      variants={{
+        show: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: '100%' }
+      }}
+      initial="hidden"
+      animate="show"
+      transition={{ delay: 1.5, duration: 0.5 }}
+    >
       <a href="https://www.alura.com.br/">
         <img
           src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg"

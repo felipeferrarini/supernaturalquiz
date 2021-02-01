@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const QuizContainer = styled.div`
+export const QuizContainer = styled(motion.div)`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
